@@ -2224,3 +2224,566 @@ footer p {
     }
 
 }
+/* =====================================================
+   INFO SECTION
+   PHONE + LOCATION + SOCIAL
+===================================================== */
+
+.info-section {
+
+    padding: 100px 7%;
+
+    background: #100606;
+
+}
+
+
+/* ================= GRID ================= */
+
+.info-grid {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+
+}
+
+
+/* ================= CARD ================= */
+
+.info-card {
+
+    min-height: 350px;
+
+    padding: 40px 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #220909,
+            #160606
+        );
+
+    border:
+        1px solid #8d0000;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    transition: 0.35s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* لمعة خفيفة أعلى المربع */
+
+.info-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 15%;
+
+    right: 15%;
+
+    height: 3px;
+
+    background: #ffb000;
+
+    border-radius: 0 0 10px 10px;
+
+}
+
+
+/* Hover */
+
+.info-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #ff1515;
+
+    box-shadow:
+        0 15px 35px rgba(255, 0, 0, 0.20);
+
+}
+
+
+/* ================= ICON ================= */
+
+.info-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 40px;
+
+    border:
+        2px solid #ffb000;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #4b0b0b,
+            #210808
+        );
+
+    box-shadow:
+        0 0 20px rgba(255, 176, 0, 0.15);
+
+}
+
+
+/* ================= TITLE ================= */
+
+.info-card h3 {
+
+    color: #ff1515;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ================= TEXT ================= */
+
+.info-card p {
+
+    color: #ddd;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ================= PHONE LINKS ================= */
+
+.info-card > a:not(.info-button) {
+
+    color: #ffb000;
+
+    text-decoration: none;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    margin: 5px 0;
+
+    transition: 0.3s ease;
+
+}
+
+
+.info-card > a:not(.info-button):hover {
+
+    color: #ffffff;
+
+    transform: scale(1.05);
+
+}
+
+
+/* ================= MAP BUTTON ================= */
+
+.info-button {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 25px;
+
+    background: #e00000;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.info-button:hover {
+
+    background: #ff2020;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 0, 0, 0.30);
+
+}
+
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 15px;
+
+}
+
+
+.social-icons a {
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #280909;
+
+    border:
+        1px solid #ffb000;
+
+    border-radius: 50%;
+
+    transition: 0.3s ease;
+
+}
+
+
+.social-icons a:hover {
+
+    background: #e00000;
+
+    transform: translateY(-6px) scale(1.08);
+
+    box-shadow:
+        0 8px 20px rgba(255, 0, 0, 0.30);
+
+}
+
+
+.social-icons img {
+
+    width: 35px;
+
+    height: 35px;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .info-grid {
+
+        grid-template-columns:
+            1fr;
+
+        max-width: 500px;
+
+    }
+
+    .info-card {
+
+        min-height: 320px;
+
+    }
+
+}
+/* =====================================================
+   PHONE / LOCATION / SOCIAL
+   THREE BOXES IN ONE ROW
+===================================================== */
+
+.info-section {
+    width: 100%;
+    padding: 90px 7%;
+    background: #100606;
+}
+
+.info-row {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ================= BOX ================= */
+
+.info-card {
+    min-height: 330px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background: #220909;
+
+    border: 1px solid rgba(255, 0, 0, 0.35);
+
+    border-radius: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.35s ease;
+}
+
+
+.info-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #ff1515;
+
+    box-shadow:
+        0 15px 35px rgba(255, 0, 0, 0.18);
+}
+
+
+/* ================= ICON ================= */
+
+.info-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= SMALL TITLE ================= */
+
+.info-small {
+    color: #ffb000;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* ================= TITLE ================= */
+
+.info-card h2 {
+    color: white;
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= TEXT ================= */
+
+.info-card p {
+    color: #ddd;
+
+    line-height: 2;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= PHONE ================= */
+
+.phone-numbers {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.phone-numbers a {
+    color: #ffb000;
+
+    text-decoration: none;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.phone-numbers a:hover {
+    color: #ff1515;
+
+    transform: scale(1.05);
+}
+
+
+/* ================= LOCATION BUTTON ================= */
+
+.info-button {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    padding: 12px 22px;
+
+    background: #e00000;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.info-button:hover {
+    background: #ffb000;
+
+    color: #160606;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= SOCIAL ICONS ================= */
+
+.social-icons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 10px;
+}
+
+
+.social-icons a {
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 2px solid #ffb000;
+
+    border-radius: 50%;
+
+    background: #160606;
+
+    transition: 0.3s ease;
+}
+
+
+.social-icons a:hover {
+    background: #b40000;
+
+    transform: translateY(-6px) scale(1.05);
+
+    box-shadow:
+        0 8px 20px rgba(255, 0, 0, 0.35);
+}
+
+
+.social-icons img {
+    width: 38px;
+
+    height: 38px;
+
+    object-fit: contain;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .info-row {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        min-height: 300px;
+    }
+
+}
