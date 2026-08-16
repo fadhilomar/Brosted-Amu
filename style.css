@@ -1970,3 +1970,257 @@ footer p {
     }
 
 }
+/* =====================================================
+   SOCIAL MEDIA - FINAL FIX
+===================================================== */
+
+.social-section {
+    width: 100%;
+    padding: 90px 7%;
+    background: #100606;
+    box-sizing: border-box;
+}
+
+.social-section .section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.social-section .section-title span {
+    display: block;
+    color: #ffb000;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-section .section-title h2 {
+    color: white;
+    font-size: 42px;
+    margin: 0;
+}
+
+.social-section .section-title p {
+    color: #ddd;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+
+/* ================= SOCIAL BOX ================= */
+
+.social-big-links {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 25px;
+}
+
+
+/* ================= EACH SOCIAL BOX ================= */
+
+.social-big-links a {
+    flex: 1;
+
+    min-height: 190px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #280909 0%,
+            #1b0707 70%
+        );
+
+    border: 1px solid #8d0000;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    transition: all 0.35s ease;
+}
+
+
+/* ================= ICON CIRCLE ================= */
+
+.social-big-links a img {
+    width: 75px;
+    height: 75px;
+
+    object-fit: contain;
+
+    display: block;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    background: #160606;
+
+    border: 2px solid #ffb000;
+
+    border-radius: 50%;
+}
+
+
+/* ================= SOCIAL NAME ================= */
+
+.social-big-links a span {
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ================= HOVER ================= */
+
+.social-big-links a:hover {
+    transform: translateY(-8px);
+
+    border-color: #ffb000;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #4a0909 0%,
+            #210707 70%
+        );
+
+    box-shadow:
+        0 12px 30px rgba(255, 0, 0, 0.25);
+}
+
+.social-big-links a:hover img {
+    border-color: #ff1515;
+
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .social-section {
+        padding: 65px 15px;
+    }
+
+    .social-section .section-title {
+        margin-bottom: 30px;
+    }
+
+    .social-section .section-title h2 {
+        font-size: 32px;
+    }
+
+    .social-section .section-title p {
+        font-size: 15px;
+    }
+
+
+    /* المربعات تبقى موجودة */
+    .social-big-links {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: center;
+
+        align-items: stretch;
+
+        gap: 8px;
+    }
+
+
+    .social-big-links a {
+        min-height: 125px;
+
+        padding: 10px 5px;
+
+        border-radius: 15px;
+
+        gap: 8px;
+    }
+
+
+    .social-big-links a img {
+        width: 48px;
+        height: 48px;
+
+        padding: 9px;
+
+        border-width: 2px;
+    }
+
+
+    .social-big-links a span {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .social-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .social-big-links {
+        gap: 6px;
+    }
+
+    .social-big-links a {
+        min-height: 115px;
+
+        padding: 8px 3px;
+    }
+
+    .social-big-links a img {
+        width: 42px;
+        height: 42px;
+
+        padding: 7px;
+    }
+
+    .social-big-links a span {
+        font-size: 10px;
+    }
+
+}
