@@ -239,7 +239,6 @@ body {
     font-weight: bold;
 }
 
-
 .section-title h2,
 .menu-title h2 {
     color: white;
@@ -265,6 +264,7 @@ body {
 
     border-radius: 10px;
 }
+
 
 /* ================= ABOUT ================= */
 
@@ -616,18 +616,6 @@ body {
 
     font-size: 17px;
 }
-.section-title,
-.category-title { 
-    color: #fcf9f9;
-
-    font-size: 30px;
-
-    margin-bottom: 5px;
-
-    text-shadow:
-        0 0 10px rgba(255, 231, 231, 0.7),
-        0 0 35px rgba(255, 175, 175, 0.3);
-    }
 
 
 /* ================= FOOTER ================= */
@@ -820,48 +808,4 @@ footer p {
                  font-size: 32px;
      }
 
-}
-
-.locacin {
-    padding: 100px 8%;
-
-    background: #160707;
-}
-
-.locacin-box {
-    max-width: 900px;
-
-    margin: auto;
-
-    padding: 45px;
-
-    text-align: center;
-
-    background: #220909;
-
-    border: 1px solid rgba(255, 0, 0, 0.3);
-
-    border-radius: 20px;
-}
-
-.locacin-box h3 {
-    color: #ff1515;
-
-    font-size: 30px;
-
-    margin-bottom: 25px;
-}
-
-.locacin-box p {
-    color: #ddd;
-
-    font-size: 18px;
-
-    line-height: 2;
-
-    margin-bottom: 15px;
-}
-
-.locacin-box strong {
-    color: #ffb000;
 }
